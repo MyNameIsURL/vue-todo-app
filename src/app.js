@@ -1,5 +1,6 @@
 import AppHeader from './components/AppHeader.vue';
 import TodoInput from './components/TodoInput.vue';
+import TodoItem from './components/TodoItem.vue';
 
 export default {
   name: 'app',
@@ -15,12 +16,17 @@ export default {
   },
   components: {
     AppHeader,
-    TodoInput
+    TodoInput,
+    TodoItem
   },
   methods: {
     addTodo(text) {
       this.todos.push({id: this.nextId, text: text});
       this.nextId++;
+    },
+    removeTodo(id) {
+      let todos = this.todos;
+      this.todos = todos.filter((todo) => todo.id != id);
     }
   }
 }
