@@ -1,8 +1,8 @@
 <template>
   <div class="app">
     <div class="todo-wrapper">
-      <AppHeader></AppHeader>
-      <TodoInput></TodoInput>
+      <app-header></app-header>
+      <todo-input v-on:todo:add="addTodo"></todo-input>
     </div>
   </div>
 </template>
