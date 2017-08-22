@@ -9,7 +9,7 @@ export default {
       todos: [
         {id: 0, text: "Make dinner tonight!"},
         {id: 1, text: "Fold the laundry."},
-        {id: 2, text: "Learn to make an Angular app!"}
+        {id: 2, text: "Learn to make a Vue app!"}
       ],
       nextId: 3
     };
